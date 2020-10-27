@@ -130,11 +130,11 @@ p {
 }
  
 img {
-  
+  width: 100%;
 }
  
 figure {
- 
+ margin: 0;
 }
  
 address {
@@ -198,6 +198,10 @@ header nav ul {
   font-weight: bold;
 }
 
+.reviews {
+  background-color: #2a423a;
+}
+
 footer p {
   margin: 0;
   text-align: center;
@@ -243,10 +247,32 @@ footer .copyright {
 
 /*--- Mobile Homepage ---*/
 
+header figure {
+  width: 60%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
 .hero-area {
   display: flex;
-  justify-content: center;
+  justify-content: left;
+  align-items: flex-start;
   flex-flow: row wrap;
+  background: url('../img/hero-image.jpg') center no-repeat #333;
+  background-size: cover;
+  min-height: 500px;
+}
+
+.hero-area .content-wrapper {
+  padding: 0 20px;
+  margin: 0;
+}
+
+.hero-area h1 {
+  font-size: 2.25em;
+  font-weight: 500;
 }
 
 aside {
@@ -260,14 +286,18 @@ aside {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background: url('../img/features-background.jpg') center no-repeat #333;
+  background-size: cover;
 }
 
 .features h2 {
-  margin-bottom: 60px;
+  margin: 0 20px 60px 0;
 }
+
 .features article {
-  width: 63%;
-  margin: 30px 0;
+  width: 54%;
+  margin: 25px 0;
+  text-align: center;
 }
 
 .features .features-items {
@@ -433,6 +463,7 @@ aside {
   input[type=text] {
     box-sizing: border-box;
     width: 100%;
+    height: 50px;
     color: #2a423a;
     font-style: italic;
     padding: 1em;
@@ -440,7 +471,8 @@ aside {
 
   input[type=button] {
     width: 100%;
-    padding: 20px 0;
+    height: 50px;
+    padding: 0;
     margin-top: 20px;
     background-color: #2a423a;
     font-family: 'Poppins', Helvetica, Arial, sans-serif;
@@ -469,6 +501,14 @@ header .content-wrapper {
   flex-flow: row nowrap;
 }
 
+header figure {
+  width: 30%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
 .header-divider {
   display: none;
 }
@@ -485,19 +525,49 @@ header nav ul {
   padding: 0;
 }
 
-.hero-area .content-wrapper {
+.hero-area {
+  min-height: 600px;
+}
+
+.hero-area h1 {
   width: 73%;
+  padding-left: 45px;
+  font-size: 2.75em;
 }
 
 aside .content-wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
   flex-flow: row nowrap;
+  margin: 0;
+  padding: 40px 50px;
 }
 
-.features .content-wrapper
-.reviews .content-wrapper {
+aside .form-description {
+  width: 33%;
+}
+
+aside .form {
+  width: 42%;
+  margin-top: 0;
+}
+
+.form input {
+  height: 40px;
+}
+
+aside h3 {
+  font-size: 1.5em;
+}
+
+.features .content-wrapper {
   width: 83%;
+}
+
+.features h2 {
+  padding: 0;
+  font-size: 2.25em;
 }
 
 .features article {
@@ -509,9 +579,27 @@ aside .content-wrapper {
   padding: 30px 50px;
 }
 
-.reviews article {
+.reviews .content-wrapper {
+  width: 83%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-flow: row wrap;
+}
+
+.reviews h2 {
+  width: 65%;
+  margin: 100px 250px 25px 100px;
+}
+
+.reviews figure ,
+.reviews article {
+  width: 45%;
+}
+
+.reviews h3 {
+  width: 65%;
+  margin: 0;
 }
 
 footer .content-wrapper {
@@ -616,18 +704,20 @@ header nav ul {
 
 .hero-area h1 {
   width: 60%;
-  padding: 0;
+  padding-left: 165px;
   font-size: 3em;
 }
 
 aside .content-wrapper {
+  width: 83%;
   display: flex;
   justify-content: space-between;
+  padding: 40px 120px;
 }
 
-aside .content-wrapper .form-description,
-aside .content-wrapper .form {
-  width: 33%;
+aside .form-description,
+aside .form {
+  width: 25%;
   padding: 0 80px;
   margin: 0;
 }
@@ -638,6 +728,21 @@ aside .content-wrapper .form {
 
 .features-article {
   flex-basis: 16%;
+}
+
+.reviews h2 {
+  width: 76%;
+  margin: 100px 250px 25px 225px;
+}
+
+.reviews figure ,
+.reviews article {
+  width: 45%;
+}
+
+.reviews h3 {
+  width: 65%;
+  margin: 0;
 }
 
 .reviews article div {
