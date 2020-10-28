@@ -228,18 +228,24 @@ footer .contact-info {
 footer .social {
   height: fit-content;
   padding: 0 10px;
+  text-align: center;
 }
 
 footer .social-icons {
   display: flex;
   justify-content: space-around;
-  align-items: center;
 }
 
 footer .social-icons p {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+footer .social-icons i {
+  color: #e2e3ed;
+  margin: 10px;
+  font-size: 1.125em;
 }
 
 footer .copyright {
@@ -653,6 +659,10 @@ footer .contact-info {
   flex-basis: 40%;
 }
 
+footer .social {
+  margin-bottom: 50px;
+}
+
 footer .social-icons {
   display: flex;
   justify-content: space-around;
@@ -789,9 +799,10 @@ aside .form {
 }
 
 .footer-content {
-  width: 69%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
+  margin: 0;
 }
 
 footer .contact-info {
